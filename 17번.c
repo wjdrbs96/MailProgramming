@@ -28,7 +28,7 @@ void merge(int list[], int left, int mid, int right)
 		list[l] = sorted[l];
 
 }
-void merge_sort(int list[],int left,int right)
+void merge_sort(int list[], int left, int right)
 {
 	int mid;
 	if (left < right)
@@ -42,11 +42,11 @@ void merge_sort(int list[],int left,int right)
 void search(int list[], int count)
 {
 	printf("count=%d\n", count);
-	printf("%d ", list[count-1]);
+	printf("%d ", list[count - 1]);
 }
 int main()
 {
-	int list[max] = {27,10,12,20,25,13,15,22};
+	int list[max] = { 27,10,12,20,25,13,15,22 };
 	merge_sort(list, 0, 7);
 	for (int i = 0; i < max; i++)
 	{
@@ -54,6 +54,6 @@ int main()
 	}
 	printf("\n");
 	srand(time(NULL));
-	search(list, rand()%8+1);
+	search(list, rand() % 8 + 1);
 	printf("\n");
 }

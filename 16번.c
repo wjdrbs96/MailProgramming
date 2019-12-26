@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #define max 6
-int solution(int input[]) {    
+int solution(int input[]) {
 	int startIndex = 0;
 	int index = startIndex;
 	for (int i = 0; i < 5; i++) {
@@ -17,7 +17,7 @@ int solution(int input[]) {
 }
 int main()
 {
-	int s[max] = { 1,4,5,0,3,2};
+	int s[max] = { 1,4,5,0,3,2 };
 	if (solution(s) == 1)
 		printf("true\n");
 	else

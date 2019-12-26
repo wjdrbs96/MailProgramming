@@ -3,7 +3,7 @@
 #define max 50
 int main()
 {
-	long int n,sum = 0, j,i = 0, s[max];
+	long int n, sum = 0, j, i = 0, s[max];
 	s[0] = 0, s[1] = 1;
 	printf("n의값을 입력하세요");
 	scanf_s("%d", &n);

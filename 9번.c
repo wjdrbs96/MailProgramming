@@ -5,7 +5,7 @@ typedef struct listNode
 	int data;
 	struct listNode *link;
 }listNode;
-listNode* insert_search(listNode *pre,int pos)  // ì‚½ì…í•  ë…¸ë“œ ì•ì„ ê°€ë¥´í‚¤ê¸° ìœ„í•œ í•¨ìˆ˜ ( pre ) 
+listNode* insert_search(listNode *pre, int pos)  // »ğÀÔÇÒ ³ëµå ¾ÕÀ» °¡¸£Å°±â À§ÇÑ ÇÔ¼ö ( pre ) 
 {
 	int i;
 	if (pos == 1)
@@ -33,23 +33,23 @@ listNode* insert_node(listNode *head, int pos, int item)
 		return head;
 	}
 }
-listNode* delete_search(listNode *pre, int n,int m)  // ì‚­ì œí•  ë…¸ë“œ ì•ì„ ê°€ë¥´í‚¤ê¸° ìœ„í•œ í•¨ìˆ˜ ( pre ) 
+listNode* delete_search(listNode *pre, int n, int m)  // »èÁ¦ÇÒ ³ëµå ¾ÕÀ» °¡¸£Å°±â À§ÇÑ ÇÔ¼ö ( pre ) 
 {
 	int i;
 	if (m == n && m == n - 1)
 		return pre;
 	else
-		for (i = 0; i < m - n - 1; i++)  // ì´ê²Œ ì´ë¬¸ì œë¥¼ í’€ë•Œ ìµœê³ ì˜ ì•„ì´ë””ì–´ ì¸ê±° ê°™ë‹¤. ( m-n-1 ) 
+		for (i = 0; i < m - n - 1; i++)  // ÀÌ°Ô ÀÌ¹®Á¦¸¦ Ç®¶§ ÃÖ°íÀÇ ¾ÆÀÌµğ¾î ÀÎ°Å °°´Ù. ( m-n-1 ) 
 			pre = pre->link;
 	return pre;
 }
-listNode* delete_node(listNode *head,int n,int m)  // ëì—ì„œë¶€í„° N ë²ˆì¨° ë…¸ë“œ ì œê±° n 
+listNode* delete_node(listNode *head, int n, int m)  // ³¡¿¡¼­ºÎÅÍ N ¹ø¤Š ³ëµå Á¦°Å n 
 {
 	listNode *remove;
 	if (m == 1)
 		return NULL;
 	listNode *pre = head;
-	pre=delete_search(pre, n,m);
+	pre = delete_search(pre, n, m);
 	remove = pre->link;
 	pre->link = remove->link;
 	free(remove);
@@ -67,15 +67,15 @@ void print(listNode *p)
 int main()
 {
 	listNode  *head = NULL;
-	int n,m;
-	printf("ë¦¬ìŠ¤íŠ¸ì˜ ê°œìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
+	int n, m;
+	printf("¸®½ºÆ®ÀÇ °³¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
 	scanf_s("%d", &m);
-	printf("në²ˆì§¸ê°’ì„ ì…ë ¥í•˜ì„¸ìš”");
+	printf("n¹øÂ°°ªÀ» ÀÔ·ÂÇÏ¼¼¿ä");
 	scanf_s("%d", &n);
 	for (int i = 0; i < m; i++)
 	{
-		head = insert_node(head, i,i+1);
+		head = insert_node(head, i, i + 1);
 	}
-	head = delete_node(head, n,m);
+	head = delete_node(head, n, m);
 	print(head);
 }

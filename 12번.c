@@ -49,7 +49,7 @@ ListNode* add_list(ListNode *head1, ListNode *head2)
 	temp->link = head2;
 	return head1;
 }
-void sorted_list(ListNode *head1,ListNode *head2)
+void sorted_list(ListNode *head1, ListNode *head2)
 {
 	int count1 = 0, count2 = 0;
 	ListNode *low = head1;
@@ -118,5 +118,5 @@ int main()
 
 	head2 = insert_node(head2, 1, 3);
 	head2 = insert_node(head2, 2, 4);
-	sorted_list(head1,head2);
+	sorted_list(head1, head2);
 }

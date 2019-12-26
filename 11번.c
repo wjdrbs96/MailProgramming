@@ -10,8 +10,8 @@ int gcd(int a, int b)
 }
 int main()
 {
-	int x, y,g;
-	printf("2ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
+	int x, y, g;
+	printf("2°³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
 	scanf_s("%d %d", &x, &y);
-	printf("%d\n",gcd(x, y));
+	printf("%d\n", gcd(x, y));
 }

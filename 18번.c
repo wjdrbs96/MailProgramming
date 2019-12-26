@@ -3,7 +3,7 @@
 typedef struct TreeNode
 {
 	int data;
-	struct TreeNode *left,*right;
+	struct TreeNode *left, *right;
 }TreeNode;
 
 TreeNode n1 = { 1,NULL,NULL };
@@ -23,11 +23,11 @@ void inorder(TreeNode *root)
 		inorder(root->right);
 	}
 }
-void reverse_node(TreeNode *root)  // ë£¨íŠ¸ë…¸ë“œë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì¢Œìš° ë°˜ì „ ì‹œí‚¤ëŠ” í•¨ìˆ˜ 
+void reverse_node(TreeNode *root)  // ·çÆ®³ëµå¸¦ ±âÁØÀ¸·Î ÁÂ¿ì ¹ÝÀü ½ÃÅ°´Â ÇÔ¼ö 
 {
 	if (root == NULL)
 		return;
-	else if (root->left== NULL && root->right == NULL)  // ìžì‹ì´ í•˜ë‚˜ë„ ì—†ì„ë•Œ
+	else if (root->left == NULL && root->right == NULL)  // ÀÚ½ÄÀÌ ÇÏ³ªµµ ¾øÀ»¶§
 		return;
 	else if (root->left != NULL || root->right != NULL)
 	{

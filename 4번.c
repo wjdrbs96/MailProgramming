@@ -25,13 +25,13 @@ void search(int list[], int p, int q)
 			printf("인덱스는 %d와 %d\n", i, j);
 		}
 	}
-		
+
 }
 int main()
 {
 	int a, b, i;
 	int s[max] = { 2,5,6,1,10 };
-	for (i = 0; i <=target/2; i++)
+	for (i = 0; i <= target / 2; i++)
 	{
 		a = i;
 		b = target - i;
