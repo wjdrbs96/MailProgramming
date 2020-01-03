@@ -4,7 +4,7 @@
 
 
 
-<a href="https://mailprogramming.com/">매일프로그래밍</a><br><br>
+<a href="https://mailprogramming.com/"><h1>매일프로그래밍</h1></a><br><br>
 
 
   ![이용방법](./image/이용방법.PNG)
