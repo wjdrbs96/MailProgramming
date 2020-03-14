@@ -1,6 +1,6 @@
 # MailProgramming
 
-<p>매일프로그래밍 에서 매주 받는 문제를 풀어 올리는 공간입니다</p> <br>
+    매일프로그래밍 에서 매주 받는 문제를 풀어 올리는 공간입니다
 
 
 <a href="https://mailprogramming.com/"><h1>매일프로그래밍</h1></a>
